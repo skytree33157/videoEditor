@@ -64,6 +64,8 @@ if video.isOpened():
                 up_pressed=False
                 left_pressed=False
                 cv.setTrackbarPos(negativeTrack,windowName,0)
+                cv.setTrackbarPos(brightTrack,windowName,50)
+                cv.setTrackbarPos(contrastTrack,windowName,50)
         
         #상하좌우 반전 키
         if key==ord('w') or key==ord('s'):
